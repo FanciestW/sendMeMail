@@ -15,7 +15,7 @@ provider:
 
 functions:
   sendmemail:
-    handler: src.app.email
+    handler: src/app.email
     events:
       - http:
           method: post
