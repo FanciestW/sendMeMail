@@ -14,7 +14,7 @@ provider:
   runtime: nodejs10.x
 
 functions:
-  hello:
+  sendmemail:
     handler: src.app.email
     events:
       - http:
