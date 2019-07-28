@@ -5,6 +5,7 @@ export const email: APIGatewayProxyHandler = async (event, _context) => {
 	const body = JSON.parse(event.body);
 	const message = body.message || '';
 	const senderEmail = body.email || '';
+	console.log(`${senderEmail}\n${message}`);
 	return {
 		statusCode: 200,
 		body: JSON.stringify({
