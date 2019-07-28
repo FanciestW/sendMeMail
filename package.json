@@ -4,10 +4,11 @@
   "description": "Serverless webpack example using Typescript",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sls invoke local -f sendmemail -p test_event.json"
   },
   "dependencies": {
-    "source-map-support": "^0.5.10"
+    "source-map-support": "^0.5.10",
+    "tslint": "^5.18.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.17",
