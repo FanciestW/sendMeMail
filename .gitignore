@@ -1,6 +1,7 @@
 package-lock.json
 .vscode/
 lib/
+*.env
 
 # Logs
 logs
