@@ -7,6 +7,7 @@
     "test": "sls invoke local -f sendmemail -p test_event.json"
   },
   "dependencies": {
+    "dotenv": "^8.0.0",
     "source-map-support": "^0.5.10",
     "tslint": "^5.18.0"
   },

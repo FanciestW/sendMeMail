@@ -1,5 +1,6 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
+require('dotenv').config();
 
 export const email: APIGatewayProxyHandler = async (event, _context) => {
 	const body = JSON.parse(event.body);
