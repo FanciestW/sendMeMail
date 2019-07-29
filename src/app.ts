@@ -1,6 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
+const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
+sgMail.setApiKey(process.env.SENDGRID_KEY);
 
 export const email: APIGatewayProxyHandler = async (event, _context) => {
 	const body = JSON.parse(event.body);
