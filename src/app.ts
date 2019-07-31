@@ -3,7 +3,7 @@ import 'source-map-support/register';
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_KEY);
 
-export const email: APIGatewayProxyHandler = async (event, _context) => {
+export const email: APIGatewayProxyHandler = (event, _context) => {
 	const body = JSON.parse(event.body);
 	const message = body.message || '';
 	const senderEmail = body.email || '';
@@ -29,10 +29,4 @@ export const email: APIGatewayProxyHandler = async (event, _context) => {
 			})
 		};
 	});
-	return {
-		statusCode: 500,
-		body: JSON.stringify({
-			message: 'Error, mail never sent?!'
-		}, null, 2),
-	};
 }

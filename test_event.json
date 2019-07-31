@@ -104,6 +104,6 @@
       "domainName": "608y0baaza.execute-api.us-east-1.amazonaws.com",
       "apiId": "608y0baaza"
     },
-    "body": "{\n\t\"email\": \"test@test.com\",\n\t\"message\": \"Hello World!\"\n}",
+    "body": "{\n\t\"email\": \"sender2@test.com\",\n\t\"message\": \"Hello World!\"\n}",
     "isBase64Encoded": false
   }
