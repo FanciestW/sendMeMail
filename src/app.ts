@@ -3,7 +3,7 @@ import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
 sgMail.setApiKey(process.env.SENDGRID_KEY);
 
-export const email: APIGatewayProxyHandler = (event, _context) => {
+export const email: APIGatewayProxyHandler = async (event, _context) => {
     const body = JSON.parse(event.body);
     const message = body.message || '';
     const senderEmail = body.email || '';
@@ -13,7 +13,7 @@ export const email: APIGatewayProxyHandler = (event, _context) => {
         subject: `SendMeMail`,
         text: message,
     };
-    sgMail.send(emailData).then((_result: any) => {
+    return sgMail.send(emailData).then((_result: any) => {
         return {
             statusCode: 200,
             body: JSON.stringify({
