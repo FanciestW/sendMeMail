@@ -9,7 +9,15 @@
         "object-literal-key-quotes": [true, "as-needed"],
         "object-literal-sort-keys": false,
         "forin": true,
-        "quotemark": [true, "single", "jsx-double"]
+        "quotemark": [true, "single", "jsx-double"],
+        "variable-name": {
+            "options": [
+              "ban-keywords",
+              "check-format",
+              "allow-leading-underscore",
+              "allow-pascal-case"
+            ]
+          }
     },
     "rulesDirectory": []
 }

@@ -1,109 +1,109 @@
 {
-    "resource": "/email",
-    "path": "/email",
+  "resource": "/email",
+  "path": "/email",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "608y0baaza.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "insomnia/6.5.3",
+    "Via": "1.1 b4346add631a498bf6cdbf88cbc5ff13.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "1Tn1URklKTT8Ob-F35pWss39frcGLG7Vgrold19E0ETljml5BU3Gpw==",
+    "X-Amzn-Trace-Id": "Root=1-5d3de03b-249a811015d43c3e5b9953cf",
+    "X-Forwarded-For": "108.28.69.164, 70.132.33.78",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "608y0baaza.execute-api.us-east-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "insomnia/6.5.3"
+    ],
+    "Via": [
+      "1.1 b4346add631a498bf6cdbf88cbc5ff13.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "1Tn1URklKTT8Ob-F35pWss39frcGLG7Vgrold19E0ETljml5BU3Gpw=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5d3de03b-249a811015d43c3e5b9953cf"
+    ],
+    "X-Forwarded-For": [
+      "108.28.69.164, 70.132.33.78"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "vjhvxp",
+    "resourcePath": "/email",
     "httpMethod": "POST",
-    "headers": {
-      "Accept": "*/*",
-      "CloudFront-Forwarded-Proto": "https",
-      "CloudFront-Is-Desktop-Viewer": "true",
-      "CloudFront-Is-Mobile-Viewer": "false",
-      "CloudFront-Is-SmartTV-Viewer": "false",
-      "CloudFront-Is-Tablet-Viewer": "false",
-      "CloudFront-Viewer-Country": "US",
-      "Content-Type": "application/json",
-      "Host": "608y0baaza.execute-api.us-east-1.amazonaws.com",
-      "User-Agent": "insomnia/6.5.3",
-      "Via": "1.1 b4346add631a498bf6cdbf88cbc5ff13.cloudfront.net (CloudFront)",
-      "X-Amz-Cf-Id": "1Tn1URklKTT8Ob-F35pWss39frcGLG7Vgrold19E0ETljml5BU3Gpw==",
-      "X-Amzn-Trace-Id": "Root=1-5d3de03b-249a811015d43c3e5b9953cf",
-      "X-Forwarded-For": "108.28.69.164, 70.132.33.78",
-      "X-Forwarded-Port": "443",
-      "X-Forwarded-Proto": "https"
+    "extendedRequestId": "di_5REGUoAMFXEw=",
+    "requestTime": "28/Jul/2019:17:49:47 +0000",
+    "path": "/dev/email",
+    "accountId": "041540665129",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "608y0baaza",
+    "requestTimeEpoch": 1564336187387,
+    "requestId": "1716fd20-b160-11e9-892f-a7ef5d54d025",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "108.28.69.164",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "insomnia/6.5.3",
+      "user": null
     },
-    "multiValueHeaders": {
-      "Accept": [
-        "*/*"
-      ],
-      "CloudFront-Forwarded-Proto": [
-        "https"
-      ],
-      "CloudFront-Is-Desktop-Viewer": [
-        "true"
-      ],
-      "CloudFront-Is-Mobile-Viewer": [
-        "false"
-      ],
-      "CloudFront-Is-SmartTV-Viewer": [
-        "false"
-      ],
-      "CloudFront-Is-Tablet-Viewer": [
-        "false"
-      ],
-      "CloudFront-Viewer-Country": [
-        "US"
-      ],
-      "Content-Type": [
-        "application/json"
-      ],
-      "Host": [
-        "608y0baaza.execute-api.us-east-1.amazonaws.com"
-      ],
-      "User-Agent": [
-        "insomnia/6.5.3"
-      ],
-      "Via": [
-        "1.1 b4346add631a498bf6cdbf88cbc5ff13.cloudfront.net (CloudFront)"
-      ],
-      "X-Amz-Cf-Id": [
-        "1Tn1URklKTT8Ob-F35pWss39frcGLG7Vgrold19E0ETljml5BU3Gpw=="
-      ],
-      "X-Amzn-Trace-Id": [
-        "Root=1-5d3de03b-249a811015d43c3e5b9953cf"
-      ],
-      "X-Forwarded-For": [
-        "108.28.69.164, 70.132.33.78"
-      ],
-      "X-Forwarded-Port": [
-        "443"
-      ],
-      "X-Forwarded-Proto": [
-        "https"
-      ]
-    },
-    "queryStringParameters": null,
-    "multiValueQueryStringParameters": null,
-    "pathParameters": null,
-    "stageVariables": null,
-    "requestContext": {
-      "resourceId": "vjhvxp",
-      "resourcePath": "/email",
-      "httpMethod": "POST",
-      "extendedRequestId": "di_5REGUoAMFXEw=",
-      "requestTime": "28/Jul/2019:17:49:47 +0000",
-      "path": "/dev/email",
-      "accountId": "041540665129",
-      "protocol": "HTTP/1.1",
-      "stage": "dev",
-      "domainPrefix": "608y0baaza",
-      "requestTimeEpoch": 1564336187387,
-      "requestId": "1716fd20-b160-11e9-892f-a7ef5d54d025",
-      "identity": {
-        "cognitoIdentityPoolId": null,
-        "accountId": null,
-        "cognitoIdentityId": null,
-        "caller": null,
-        "sourceIp": "108.28.69.164",
-        "principalOrgId": null,
-        "accessKey": null,
-        "cognitoAuthenticationType": null,
-        "cognitoAuthenticationProvider": null,
-        "userArn": null,
-        "userAgent": "insomnia/6.5.3",
-        "user": null
-      },
-      "domainName": "608y0baaza.execute-api.us-east-1.amazonaws.com",
-      "apiId": "608y0baaza"
-    },
-    "body": "{\n\t\"email\": \"sender2@test.com\",\n\t\"message\": \"Hello World!\"\n}",
-    "isBase64Encoded": false
-  }
+    "domainName": "608y0baaza.execute-api.us-east-1.amazonaws.com",
+    "apiId": "608y0baaza"
+  },
+  "body": "{\n\t\"email\": \"sender2@test.com\",\n\t\"message\": \"Hello World!\"\n}",
+  "isBase64Encoded": false
+}
