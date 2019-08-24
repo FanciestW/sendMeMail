@@ -12,10 +12,11 @@ export const email: APIGatewayProxyHandler = async (event, _context) => {
         const body = JSON.parse(event.body);
         const message = body.message || '';
         const senderEmail = body.email || '';
+        const senderName = body.name || '';
         const emailData = {
             to: 'wlin26@yahoo.com',
             from: senderEmail,
-            subject: `SendMeMail`,
+            subject: `SendMeMail: Message from ${senderName}`,
             text: message,
         };
         return sgMail.send(emailData).then((_result: any) => {
