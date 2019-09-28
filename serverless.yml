@@ -14,6 +14,7 @@ provider:
   runtime: nodejs10.x
   environment:
     SENDGRID_KEY: ${env:SENDGRID_KEY}
+    CAPTCHA_SECRET_KEY: ${env:CAPTCHA_SECRET_KEY}
 
 functions:
   sendmemail:

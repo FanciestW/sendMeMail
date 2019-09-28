@@ -1,4 +1,5 @@
 const sgMail = require('@sendgrid/mail');
+const { validateCaptchaToken } = require('./utils/captcha');
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
 sgMail.setApiKey(process.env.SENDGRID_KEY);
@@ -10,6 +11,18 @@ export const email: APIGatewayProxyHandler = async (event, _context) => {
             'Access-Control-Allow-Credentials': true,
         };
         const body = JSON.parse(event.body);
+
+        // Validate reCAPTCHA token.
+        if (!await validateCaptchaToken(body.captcha)) {
+            return {
+                statusCode: 400,
+                headers: header,
+                body: JSON.stringify({
+                    message: 'reCAPTCHA Failed, please try again.',
+                }),
+            };
+        }
+
         const message = body.message || '';
         const senderEmail = body.email || '';
         const senderName = body.name || '';
