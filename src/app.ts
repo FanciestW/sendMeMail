@@ -26,10 +26,11 @@ export const email: APIGatewayProxyHandler = async (event, _context) => {
         const message = body.message || '';
         const senderEmail = body.email || '';
         const senderName = body.name || '';
+        const subject = body.subject || `SendMeMail: Message from ${senderName}`;
         const emailData = {
             to: 'wlin26@yahoo.com',
             from: senderEmail,
-            subject: `SendMeMail: Message from ${senderName}`,
+            subject,
             text: message,
         };
         return sgMail.send(emailData).then((_result: any) => {
